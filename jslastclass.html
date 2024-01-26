@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="shade()" style="background: blue;">Hello</button>
+    <script>
+        function shade() {
+            console.log('welcome to my function');
+            document.querySelector('body').style.background = 'blue'
+        }
+    </script>
+
+    <script>
+        function checkAge(x) {
+            if (x >= 18) {
+                return true;
+            } else {
+                return confirm('do you have your parent permmission');
+            }
+        }
+        let age = prompt('how old are you?')
+        if (checkAge(age)) {
+            alert('Access Granted');
+        }
+        else {
+            alert('Access Denied')
+        }
+    </script>
+
+    <script>
+        let peter = yearofBirth =>{
+            let countryretirementAge = 60;
+            let countryYear = newDate().getFullYear()
+            let age = currentyear - yearofBirth;
+            return countryretirementAge-age;
+        }
+        let mybirthyear = prompt('which year where you born ')
+        alert(`you have ${peter(mybirthyear)} year more to retire`)
+    </script>
+
+
+</body>
+
+</html>
